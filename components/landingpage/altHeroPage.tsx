@@ -23,7 +23,8 @@ export default function AltHeroPage() {
             fontWeight={700}
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
+            The Official website of NICESA -  Nile University of Nigeria Chapter and the Department
+            of Civil Engineering
           </Text>
           <Stack direction={'row'}>
             <Button
