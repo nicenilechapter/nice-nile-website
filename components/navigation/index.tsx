@@ -243,41 +243,114 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: 'Inspiration',
+    label: 'Home',
+  },
+  {
+    label: 'Getting Started',
     children: [
       {
-        label: 'Explore Design Work',
-        subLabel: 'Trending Design to inspire you',
+        label: 'Course Registration',
+        subLabel: 'How to register your courses'
+      },
+      {
+        label: 'Association Dues',
+        subLabel: 'How to Pay your association dues'
+      },
+      {
+        label: 'FAQs',
+        subLabel: 'See Frequently Asked Questions'
+      },
+      {
+        label: 'Useful Information',
+        subLabel: 'Important things you need to know'
+      }
+    ]
+  },
+  {
+    label: 'About',
+    children: [
+      {
+        label: 'Who are we',
         href: '#',
       },
       {
-        label: 'New & Noteworthy',
-        subLabel: 'Up-and-coming Designers',
+        label: 'Our Brand',
         href: '#',
       },
+      {
+        label: 'Our History',
+        subLabel: 'History of NICESA, Goals, Vision and Mission',
+        href: '#'
+      },
+      {
+        label: 'By-Law',
+        subLabel: 'The By-Law of the association'
+      },
+      {
+        label: 'The Executives',
+        subLabel: 'Our Current Leaders'
+      },
+      {
+        label: 'The Past Executives',
+        subLabel: 'Our Previous Leaders'
+      },
+      {
+        label: 'Mentors of the Association'
+      }
     ],
   },
   {
-    label: 'Find Work',
+    label: 'Events',
     children: [
       {
-        label: 'Job Board',
-        subLabel: 'Find your dream design job',
-        href: '#',
+        label: 'Field Trip',
       },
       {
-        label: 'Freelance Projects',
-        subLabel: 'An exclusive list for contract work',
-        href: '#',
+        label: 'Conferences'
       },
-    ],
+      {
+        label: 'Picnics'
+      },
+      {
+        label: 'Lectures'
+      },
+      {
+        label: 'Awards'
+      }
+    ]
   },
   {
-    label: 'Learn Design',
-    href: '#',
+    label: 'Resources',
+    children: [
+      {
+        label: 'Maps'
+      },
+      {
+        label: 'Subject Materials'
+      },
+      {
+        label: 'Useful Contacts'
+      },
+      {
+        label: 'Tutorials'
+      },
+      {
+        label: "Lecturer's Info"
+      }
+    ]
   },
   {
-    label: 'Hire Designers',
-    href: '#',
+    label: 'Membership',
+    children: [
+      {
+        label: 'Registeration'
+      },
+      {
+        label: 'Pay Dues'
+      }
+    ]
   },
+  {
+    label: 'Contact Us'
+  }
 ]
