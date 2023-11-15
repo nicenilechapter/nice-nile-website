@@ -82,8 +82,8 @@ export default function FrequentlyAskedQuestions() {
                 <Heading>Frequently Asked Questions (FAQs)</Heading>
                 <Accordion allowMultiple width="100%" maxW="lg" rounded="lg">
                     {
-                        QUESTIONS.map(({ title, answer }) => (
-                        <AccordionItem>
+                        QUESTIONS.map(({ title, answer }, i) => (
+                        <AccordionItem key={i}>
                             <AccordionButton
                                 display="flex"
                                 alignItems="center"
