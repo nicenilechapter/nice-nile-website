@@ -22,6 +22,7 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from '@chakra-ui/icons'
+import Image from 'next/image'
 
 export default function Navigation() {
   const { isOpen, onToggle } = useDisclosure()
@@ -49,13 +50,13 @@ export default function Navigation() {
             aria-label={'Toggle Navigation'}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-          <Text
-            textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-            fontFamily={'heading'}
-            color={useColorModeValue('gray.800', 'white')}>
-            Logo
-          </Text>
+        <Flex flex={{ base: 1 }} align="center" justify={{ base: 'center', md: 'start' }}>
+          <Image
+            src="/assets/nice-main-logo.png"
+            alt='NICESA logo'
+            width={60}
+            height={60}
+          />
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
             <DesktopNav />
@@ -250,7 +251,8 @@ const NAV_ITEMS: Array<NavItem> = [
     children: [
       {
         label: 'Course Registration',
-        subLabel: 'How to register your courses'
+        subLabel: 'How to register your courses',
+        href: '/course-registeration'
       },
       {
         label: 'Association Dues',
@@ -288,7 +290,8 @@ const NAV_ITEMS: Array<NavItem> = [
       },
       {
         label: 'The Executives',
-        subLabel: 'Our Current Leaders'
+        subLabel: 'Our Current Leaders',
+        href: '/executives'
       },
       {
         label: 'The Past Executives',
