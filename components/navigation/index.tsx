@@ -245,6 +245,7 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: 'Home',
+    href: '/'
   },
   {
     label: 'Getting Started',
@@ -273,7 +274,7 @@ const NAV_ITEMS: Array<NavItem> = [
     children: [
       {
         label: 'Who are we',
-        href: '#',
+        href: '/who-we-are',
       },
       {
         label: 'Our Brand',
@@ -282,7 +283,7 @@ const NAV_ITEMS: Array<NavItem> = [
       {
         label: 'Our History',
         subLabel: 'History of NICESA, Goals, Vision and Mission',
-        href: '#'
+        href: '/history'
       },
       {
         label: 'By-Law',
