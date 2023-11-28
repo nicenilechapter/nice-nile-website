@@ -4,18 +4,25 @@ import { Stack, Flex, Button, Text, VStack, useBreakpointValue } from '@chakra-u
 
 export default function AltHeroPage() {
   return (
-    <Flex
-      w={'full'}
-      h={'100vh'}
-      backgroundImage={
-        'url(/assets/nileBuilding.png)'
-      }
-      backgroundSize={'cover'}
-      backgroundPosition={'center center'}>
+    <div className='relative'>
+      <video
+        src='/assets/nicesa-video.mp4'
+        autoPlay={true}
+        loop={true}
+        controls={false}
+        poster='/assets/nileBuilding.png'
+        className='w-full md:w-screen h-full -z-20'
+
+      /> 
+
       <VStack
         w={'full'}
+        h={'full'}
         justify={'center'}
-        px={useBreakpointValue({ base: 4, md: 8 })}
+        px={useBreakpointValue({ base: 0, md: 8 })}
+        zIndex={100}
+        top={0}
+        position={"absolute"}
         bgGradient={'linear(to-r, blackAlpha.600, transparent)'}>
         <Stack maxW={'2xl'} align={'flex-start'} spacing={6}>
           <Text
@@ -39,11 +46,11 @@ export default function AltHeroPage() {
               rounded={'full'}
               color={'white'}
               _hover={{ bg: 'whiteAlpha.500' }}>
-              Show me more
+              Who we are
             </Button>
           </Stack>
         </Stack>
       </VStack>
-    </Flex>
+    </div>
   )
 }
