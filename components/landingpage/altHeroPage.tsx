@@ -1,8 +1,10 @@
 'use client'
 
-import { Stack, Flex, Button, Text, VStack, useBreakpointValue } from '@chakra-ui/react'
+import { Stack, Flex, Button, Text, VStack, useBreakpointValue, useMediaQuery } from '@chakra-ui/react'
 
 export default function AltHeroPage() {
+
+  const isMobile = useMediaQuery('(max-width: 768px)')
   return (
     <div className='relative'>
       <video
@@ -23,13 +25,17 @@ export default function AltHeroPage() {
         zIndex={100}
         top={0}
         position={"absolute"}
+        paddingX={useBreakpointValue({ base: '12px', md: '0' })}
         bgGradient={'linear(to-r, blackAlpha.600, transparent)'}>
         <Stack maxW={'2xl'} align={'flex-start'} spacing={6}>
           <Text
             color={'white'}
             fontWeight={700}
             lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}>
+            fontSize={useBreakpointValue({ base: 'xl', md: '4xl' })}
+            boxSizing='border-box'
+            width={"full"}
+          >
             The Official website of NICESA -  Nile University of Nigeria Chapter and the Department
             of Civil Engineering
           </Text>

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function IntroSection() {
     return (
-        <section className="w-full py-8 px-5 grid grid-cols-1 md:grid-cols-2">
+        <section className="w-full py-8 px-5 box-border grid grid-cols-1 md:grid-cols-2">
             <div className="flex flex-col md:justify-center">
                 <h2 className="text-2xl font-semibold">
                     Who Are We?

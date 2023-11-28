@@ -15,6 +15,7 @@ import {
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
+  HStack,
 } from '@chakra-ui/react'
 import {
   HamburgerIcon,
@@ -147,6 +148,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
     <Box
       as="a"
       href={href}
+      download={label === "By-Law"}
       role={'group'}
       display={'block'}
       p={2}
@@ -192,7 +194,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
 
   return (
     <Stack spacing={4} onClick={children && onToggle}>
-      <Box
+      <HStack
         py={2}
         as="a"
         href={href ?? '#'}
@@ -213,7 +215,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
             h={6}
           />
         )}
-      </Box>
+      </HStack>
 
       <Collapse in={isOpen} animateOpacity style={{ marginTop: '0!important' }}>
         <Stack
@@ -239,7 +241,8 @@ interface NavItem {
   label: string
   subLabel?: string
   children?: Array<NavItem>
-  href?: string
+  href?: string,
+  comingSoon?: boolean
 }
 
 const NAV_ITEMS: Array<NavItem> = [
@@ -287,7 +290,8 @@ const NAV_ITEMS: Array<NavItem> = [
       },
       {
         label: 'By-Law',
-        subLabel: 'The By-Law of the association'
+        subLabel: 'The By-Law of the association',
+        href: '/documents/by-law NICESA.pdf'
       },
       {
         label: 'The Executives',
@@ -299,7 +303,8 @@ const NAV_ITEMS: Array<NavItem> = [
         subLabel: 'Our Previous Leaders'
       },
       {
-        label: 'Mentors of the Association'
+        label: 'Mentors of the Association',
+        href: '/mentors'
       }
     ],
   },
@@ -308,9 +313,11 @@ const NAV_ITEMS: Array<NavItem> = [
     children: [
       {
         label: 'Field Trip',
+        href: '/field-trips'
       },
       {
-        label: 'Conferences'
+        label: 'Conferences',
+        href: '/conferences'
       },
       {
         label: 'Picnics'
@@ -347,10 +354,12 @@ const NAV_ITEMS: Array<NavItem> = [
     label: 'Membership',
     children: [
       {
-        label: 'Registeration'
+        label: 'Registeration',
+        comingSoon: true
       },
       {
-        label: 'Pay Dues'
+        label: 'Pay Dues',
+        comingSoon: true
       }
     ]
   },

@@ -2,6 +2,7 @@ import FrequentlyAskedQuestions from '@/components/faq'
 import Footer from '@/components/footer'
 import AltHeroPage from '@/components/landingpage/altHeroPage'
 import HeroSection from '@/components/landingpage/heroPage'
+import IntroSection from '@/components/landingpage/introSection'
 import Navigation from '@/components/navigation'
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
     <main className=" min-h-screen">
       <Navigation/>
       <AltHeroPage/>
+      <IntroSection/>
       <FrequentlyAskedQuestions/>
       <Footer/>
     </main>

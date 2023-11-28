@@ -15,6 +15,7 @@ import {
 import { ReactNode } from 'react'
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 import { BiMailSend } from 'react-icons/bi'
+import Image from 'next/image'
 
 const Logo = (props: any) => {
   return (
@@ -81,9 +82,14 @@ export default function Footer() {
           spacing={8}>
           <Stack spacing={6}>
             <Box>
-              <Logo color={useColorModeValue('gray.700', 'white')} />
+              <Image 
+                src={"/assets/nice-main-logo.png"}
+                alt='NICESA Logo'
+                width={80}
+                height={80}
+              />
             </Box>
-            <Text fontSize={'sm'}>© 2022 Chakra Templates. All rights reserved</Text>
+            <Text fontSize={'sm'}>© 2023 NICESA. All rights reserved</Text>
             <Stack direction={'row'} spacing={6}>
               <SocialButton label={'Twitter'} href={'#'}>
                 <FaTwitter />

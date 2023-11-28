@@ -70,17 +70,13 @@ const QUESTIONS: Array<Question> = [
 
 export default function FrequentlyAskedQuestions() {
     return (
-        <Flex
-            minH={'100vh'}
-            align={'center'}
-            justify={'center'}
-            bg={useColorModeValue('gray.50', 'gray.800')}
-            color="#000"
-        >
+        <div className="min-h-screen w-screen flex items-center justify-center px-3 py-6 box-border md:overflow-x-hidden">
                 
-            <Container>
-                <Heading>Frequently Asked Questions (FAQs)</Heading>
-                <Accordion allowMultiple width="100%" maxW="lg" rounded="lg">
+            <div className="mx-auto box-border">
+                <h2 className="text-center text-2xl font-semibold">
+                    Frequently Asked Questions (FAQs)
+                </h2>
+                <Accordion marginY={10} allowMultiple maxW="lg" rounded="lg">
                     {
                         QUESTIONS.map(({ title, answer }, i) => (
                         <AccordionItem key={i}>
@@ -102,8 +98,8 @@ export default function FrequentlyAskedQuestions() {
                         ))
                     }
                 </Accordion>
-            </Container>
-        </Flex>
+            </div>
+        </div>
   )
 
 }
