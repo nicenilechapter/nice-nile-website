@@ -241,7 +241,8 @@ const NAV_ITEMS: Array<NavItem> = [
       },
       {
         label: 'FAQs',
-        subLabel: 'See Frequently Asked Questions'
+        subLabel: 'See Frequently Asked Questions',
+        href: '/faq'
       },
       {
         label: 'Useful Information',

@@ -20,11 +20,11 @@ export default function WhoWeAre(){
                 NICE-SA (Nigerian Institution of Civil Engineers Student Association):
                 NICE-SA is here to be your reliable support system, offering assistance with any questions or issues you may face as you embark on your Civil Engineering BSc journey.
                 We collaborate to organize engaging lecture conferences, tutorials, and field trips to enhance your learning experience.
-                We're all about the fun too! NICE-SA brings you a vibrant social scene with sports events, social gatherings, and exciting opportunities to connect with your fellow students.
+                We are all about the fun too! NICE-SA brings you a vibrant social scene with sports events, social gatherings, and exciting opportunities to connect with your fellow students.
             </p>
 
             <p>
-                Exploring the real world of civil engineering? We've got you covered with field trips and industry exposure to 
+                Exploring the real world of civil engineering? We have got you covered with field trips and industry exposure to 
                 give you a taste of what awaits in your future career. Remember, NICE-SA is just a part of a bigger picture.
             </p>
 

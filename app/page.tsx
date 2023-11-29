@@ -1,3 +1,4 @@
+import CGPACalculator from '@/components/cgpaCalculator'
 import FrequentlyAskedQuestions from '@/components/faq'
 import Footer from '@/components/footer'
 import AltHeroPage from '@/components/landingpage/altHeroPage'
@@ -11,7 +12,7 @@ export default function Home() {
       <Navigation/>
       <AltHeroPage/>
       <IntroSection/>
-      <FrequentlyAskedQuestions/>
+      <CGPACalculator/>
       <Footer/>
     </main>
   )

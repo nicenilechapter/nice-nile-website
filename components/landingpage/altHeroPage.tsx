@@ -12,7 +12,7 @@ export default function AltHeroPage() {
         autoPlay={true}
         loop={true}
         controls={false}
-        poster='/assets/nileBuilding.png'
+        poster='/assets/banner.png'
         className='w-full md:w-screen h-full -z-20'
 
       /> 

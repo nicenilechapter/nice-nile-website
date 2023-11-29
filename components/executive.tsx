@@ -81,8 +81,9 @@ export default function Executives() {
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-9">
                 {
-                    EXECUTIVES.slice(0, 2).map((executive) => (
+                    EXECUTIVES.slice(0, 2).map((executive, i) => (
                         <ExecutiveProfile 
+                            key={i}
                             {...executive}
                         />
                     ))
@@ -91,8 +92,9 @@ export default function Executives() {
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-9">
                 {
-                    EXECUTIVES.slice(2, 5).map((executive) => (
+                    EXECUTIVES.slice(2, 5).map((executive, i) => (
                         <ExecutiveProfile 
+                            key={i}
                             {...executive}
                         />
                     ))
@@ -101,8 +103,9 @@ export default function Executives() {
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-9">
                 {
-                    EXECUTIVES.slice(5, 7).map((executive) => (
-                        <ExecutiveProfile 
+                    EXECUTIVES.slice(5, 7).map((executive, i) => (
+                        <ExecutiveProfile
+                            key={i} 
                             {...executive}
                         />
                     ))
@@ -113,15 +116,15 @@ export default function Executives() {
                 <h2>Accomplishments</h2>
                 <ul>
                     {
-                        ACCOMPLISHMENTS.map((accomplishment) => (
-                            <li>{accomplishment}</li>
+                        ACCOMPLISHMENTS.map((accomplishment, i) => (
+                            <li key={i}>{accomplishment}</li>
                         ))
                     }
                 </ul>
 
                 <p>
                     As our tenure progresses, we are committed to accomplishing even more before its conclusion. We are 
-                    dedicated to further enhancing the association's impact and service to the student community within 
+                    dedicated to further enhancing the associations impact and service to the student community within 
                     the upcoming months.
                 </p>
             </div>

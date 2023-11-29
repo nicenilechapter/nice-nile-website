@@ -21,7 +21,7 @@ export default function IntroSection() {
                     </p>
 
                     <p>
-                        We're all about the fun too! NICE-SA brings you a vibrant social scene with 
+                        We are all about the fun too! NICE-SA brings you a vibrant social scene with 
                         sports events, social gatherings, and exciting opportunities to connect with 
                         your fellow students.
                     </p>
@@ -32,7 +32,7 @@ export default function IntroSection() {
                     </p>
 
                     <p>
-                        Exploring the real world of civil engineering? We've got you covered with field 
+                        Exploring the real world of civil engineering? We have got you covered with field 
                         trips and industry exposure to give you a taste of what awaits in your future career.
                     </p>
                 </div>
