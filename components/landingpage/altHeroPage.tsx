@@ -22,7 +22,7 @@ export default function AltHeroPage() {
         h={'full'}
         justify={'center'}
         px={useBreakpointValue({ base: 0, md: 8 })}
-        zIndex={100}
+        zIndex={10}
         top={0}
         position={"absolute"}
         paddingX={useBreakpointValue({ base: '12px', md: '0' })}
@@ -41,19 +41,19 @@ export default function AltHeroPage() {
           </Text>
           <Stack direction={'row'}>
             <Button
-              bg={'blue.400'}
+              bg={'whiteAlpha.400'}
               rounded={'full'}
               color={'white'}
-              _hover={{ bg: 'blue.500' }}>
-              Show me more
+              _hover={{ bg: 'whiteAlpha.500' }}>
+              Learn more
             </Button>
-            <Button
+            {/* <Button
               bg={'whiteAlpha.300'}
               rounded={'full'}
               color={'white'}
               _hover={{ bg: 'whiteAlpha.500' }}>
               Who we are
-            </Button>
+            </Button> */}
           </Stack>
         </Stack>
       </VStack>
